@@ -3,6 +3,8 @@ import { PORT } from "./config.js";
 import cors from "cors";
 import indexRoutes from "./routes/index.routes.js";
 import taskRoutes from "./routes/tasks.routes.js";
+import sequelize from "./conexions.js";
+import './models/tasks.js';
 const app = express();
 
 app.use(express.json());
