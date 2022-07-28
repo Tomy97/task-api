@@ -5,8 +5,9 @@ const sequelize = new Sequelize("taskdb", "root", "", {
   dialect: "mysql",
   port: 3306,
   define: {
-    timestamps: false
-  }
+    timestamps: false,
+
+  },  
 });
 try {
   await sequelize.authenticate();
